@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>module-04-challenge-PassOrFail</title>
+    <link rel="stylesheet" type="text/CSS" href="style.css">
+</head>
+<body>
+    <main class="mainContent">
+        <section id="startingPage">
+            <h1>JavaScript Fundamentals Quiz</h1>
+            <button id="startButton">BEGIN</button>
+            <button id="startingPageHighScore" onclick="displayHighScore()">High Score(s)</button>
+        </section>
+        <section id="theQuiz">
+            <article id="remainingTime">REMAINING TIME: </article>
+            <article id="theQuestion">
+                <p>Question</p>
+            </article>
+            <button id="choiceA" onclick="verifyAnswer('choiceA')">A</button>
+            <button id="choiceB" onclick="verifyAnswer('choiceB')">B</button>
+            <button id="choiceC" onclick="verifyAnswer('choiceC')">C</button>
+            <button id="choiceD" onclick="verifyAnswer('choiceD')">D</button>
+            <article id="userResult"></article>
+        </section>
+        <section id="retrieveUserInformation">
+            <article id="userScoreRetrieval"></article>
+                <input id="inputInitials" type="text" name="inputInitials" size="40" placeholder="Input initials to recieve score.">
+                <button id="retrieveScore">ENTER</button>
+        </section>
+        <section id="userResult">
+            <article id="highScore">
+                <header id="userResultHeader">
+                    <h2>USER</h2>
+                    <h2>SCORE</h2>
+                </header>
+                <div id="highScoreUser"></div>
+                <div id="highScoreResult"></div>
+            </article>
+            <article id="playAgain">
+                <button id="playAgainButton" onclick="playAgainButton()">PLAY AGAIN</button>
+                <button id="resetScore" onclick="resetScore()">RESET SCORE(S)</button>
+            </article>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
